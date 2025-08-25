@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Handloom Map with Bihart.in-style Navbar & Amazon Footer</title>
+  <style>
+    body {
+
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+    .handloom-photo {
+      max-width: 500px;
+      margin: 40px auto;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* ✅ Bihart.in-style navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .navbar nav {
+      flex: 1;
+      text-align: center;
+    }
+
+    .navbar nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .navbar nav a:hover {
+      color: #555;
+    }
+
+    .navbar .actions a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+    }
+
+    /* ✅ Map container & dots */
+    .map-container {
+      position: relative;
+      display: inline-block;
+      margin: 40px auto;
+      display: block;
+      text-align: center;
+    }
+
+    .map-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .dot {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background: #000;
+      border-radius: 50%;
+      opacity: 0.8;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    /* ✅ Amazon-style lower navbar */
+    .footer-navbar {
+      background-color: #febd69; /* Amazon yellow */
+      padding: 20px 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-navbar a {
+      margin: 10px 20px;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      transition: text-decoration 0.2s;
+    }
+
+    .footer-navbar a:hover {
+      text-decoration: underline;
+    }
+        /* ✅ Info section */
+        .handloom-info {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Top Navbar -->
+  <div class="navbar">
+    <a href="#" class="logo">Trendiloom</a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Collections</a>
+      <a href="#">customize</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="actions">
+      <a href="#">Sign In</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+
+  <!-- ✅ India Handloom Map with clickable states -->
+  <div class="map-container">
+    <img src="map.png" alt="India Handloom Map" usemap="#india-map">
+
+    <!-- Visible dots for clarity -->
+    <div class="dot" style="left: 855px; top: 529px;"></div> <!-- Bihar -->
+    <div class="dot" style="left: 442px; top: 612px;"></div> <!-- Gujarat -->
+    <div class="dot" style="left: 785px; top: 669px;"></div> <!-- Tamil Nadu -->
+
+    <map name="india-map">
+      <!-- Bihar -->
+      <area shape="circle" coords="855,529,20" href="bihar.html" alt="Bihar" title="Bihar">
+      <!-- Gujarat -->
+      <area shape="circle" coords="442,612,20" href="gujarat.html" alt="Gujarat" title="Gujarat">
+      <!-- Tamil Nadu -->
+      <area shape="rect" coords="775,659,795,679" href="tamilnadu.html" alt="Tamil Nadu" title="Tamil Nadu">
+    </map>
+  </div>
+  <img src="fab.png" alt="Handloom Fabric" class="handloom-photo">
+  <div class="handloom-info">
+    <h2>India’s Rich Handloom Tradition</h2>
+    <p>India’s rich handloom tradition is a tapestry of varied weaving techniques, designs, and motifs that differ from region to region. Every handloom fabric tells a unique cultural story, from the vibrant Phulkari of Punjab to the complex Ikkat of Odisha. Many of these textiles are intricately tied to local customs and rituals, often playing a central role in weddings, festivals, and religious ceremonies. For instance, the Banarasi silk sari is essential to North Indian bridal wear, symbolising luxury and timeless beauty.</p>
+
+    <p>Handwoven textiles also reflect India’s diverse identity. Traditional motifs, colours, and patterns are deeply rooted in the social and cultural life of different communities. The intricate designs often feature elements of local folklore, religious symbols, and nature, creating a rich visual language that connects generations and preserves indigenous heritage.</p>
+
+    <h3>The Economic Role of Handlooms: Rural Employment and Livelihoods</h3>
+    <p>The handloom industry provides significant employment in India, especially in rural regions. According to the Fourth All India Handloom Census, there are over 3 million weavers and allied workers in the handloom sector, most of whom belong to economically weaker sections of society. Many women rely on handloom weaving as their primary income source, helping support their families and communities.</p>
+
+    <p>Unlike large-scale, mechanised textile production, the handloom sector is labour-intensive, ensuring more employment opportunities, especially in regions with limited industrial development. It also promotes sustainable economic growth by fostering decentralised production and utilising eco-friendly methods. The focus on natural dyes and organic materials, such as cotton, silk, and wool, adds to the environmentally conscious nature of the industry.</p>
+
+    <h3>Challenges Facing the Handloom Sector</h3>
+    <p>Despite its cultural and economic value, the handloom industry in India faces significant challenges. The rise of mechanised textile mills and the influx of cheap, mass-produced fabrics have threatened the livelihood of handloom weavers. Additionally, the younger generation in many weaving communities is reluctant to continue the family tradition due to low wages, lack of market access, and outdated weaving infrastructure.</p>
+
+    <p>Efforts are being made by the government, NGOs, and private enterprises to address these issues and revive the sector. Various schemes and initiatives, such as the Handloom Mark and e-commerce platforms, have been introduced to promote handloom products and connect artisans directly to consumers. Skill development programs and design workshops aim to empower weavers with new techniques and market insights, helping them adapt to changing consumer preferences.</p>
+
+    <h3>Reviving Traditional Weaving Practices and Supporting Artisans</h3>
+    <p>Several initiatives have emerged in recent years to revitalise the handloom sector. One of the most notable efforts is promoting handloom products through government programs like the National Handloom Development Programme (NHDP), which focuses on improving the infrastructure, upgrading technology, and providing financial support to weavers.</p>
+
+    <p>Moreover, the “India Handloom Brand” initiative has helped to create a niche market for high-quality handloom products, promoting the authenticity of traditional weaving techniques. By distinguishing handloom products from mass-produced items, this branding initiative boosts consumer awareness and demand for genuine handwoven textiles.</p>
+
+    <p>E-commerce platforms have also played a pivotal role in reviving handloom traditions. Platforms such as GoCoop, Jaypore, and Okhai have provided artisans with direct access to national and international markets. These platforms help weavers bypass middlemen, allowing them to earn fair wages and ensuring that traditional skills are financially sustainable.</p>
+
+    <p>In addition, collaborations between designers and weavers create fresh interest in handlooms. Indian fashion designers are increasingly incorporating handwoven textiles into their collections, helping to popularise them among younger generations. Events like India Handloom Week have brought handloom products into the mainstream, giving them a contemporary appeal while staying true to their roots.</p>
+  </div>
+
+  <!-- ✅ Amazon-style lower navbar -->
+  <div class="footer-navbar">
+    <a href="#">Contact Us</a>
+    <a href="#">Help</a>
+    <a href="#">Returns</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">About Us</a>
+  </div>
+
+</body>
+</html>
+
+
