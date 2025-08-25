@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>India Tour</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Georgia', serif;
+    }
+
+    nav {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      box-sizing: border-box;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b77c39;
+    }
+
+    .background {
+      background: url('fabric1.png') center/cover no-repeat;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-size: 4rem;
+      color: #fff;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+      padding: 20px 50px;
+      border-radius: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      z-index: 2;
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    .btn {
+      padding: 18px 50px;
+      background: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.3rem;
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      transition: background 0.3s, transform 0.2s;
+      z-index: 2;
+      animation: fadeIn 2.5s ease-out forwards;
+      margin-top: 20px; /* adds space when stacked vertically */
+    }
+
+    .btn:hover {
+      background: #f8f4ee;
+      transform: translateY(-3px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 10px;
+      }
+
+      .title {
+        font-size: 2.5rem;
+        padding: 15px 30px;
+      }
+
+      .btn {
+        font-size: 1rem;
+        padding: 14px 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Sign In</a>
+  </nav>
+
+  <div class="background">
+    <div class="title">Trendiloom</div>
+    <a href="main page.html" class="btn">weave map</a>
+    <a href="INDEX.html" class="btn">QUIZ</a>
+    <a href="best_reel.html" class="btn">Best Reel</a> <!-- NEW BUTTON -->
+  </div>
+</body>
+</html>
+
+
+
+
